@@ -1,16 +1,20 @@
 body{
-    background-color: #6ecccc;
+    background-image: url('/img/chaDaIsisPink.png');
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: 0px;
     width:100%;
     height: 100%;
     margin: 0;
     padding: 0;
     position: relative;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
 }
 #itens {
-    display: flex;
+    display: none;
     background-color: #6ecccc;
     width: 750px;
     height: 1500px;
