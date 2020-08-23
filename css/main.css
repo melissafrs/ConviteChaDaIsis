@@ -18,11 +18,7 @@ body{
     z-index:-1;
 
 }
-#pluto {
-    width: 25%;
-    position: absolute;
-    top: 5px;
-}
+
 #itens {
     display: flex;
     background-color: #f6f6f6;
@@ -57,18 +53,14 @@ body{
     }
   }
 
-  @media screen and (min-width:10px){
-    #pluto {
-        width: 140px;
+@media screen and (min-width:10px){
 
-    }
     #faixa {
-        width: 482.8;
-        left: 1.38px;
-
+        width: 443.8;
+        
     }
     #itens{
-        width: 370px;
+        width: 340px;
         height: 1200px;
         top: 10%;
     }
@@ -101,13 +93,8 @@ body{
     }
 }
 @media screen and (min-width:500px){
-    #pluto {
-        width: 185px;
-        right: 60px;
-    }
     #faixa {
         width: 588.52;
-        left: 1.5px;
 
     }
     #itens{
@@ -144,13 +131,8 @@ body{
     }
 }
 @media screen and (min-width:768px){
-    #pluto {
-        width: 255px;
-        left: 62%;
-    }
     #faixa {
         width: 980.29;
-        left: 2.14px;
     }
     #itens{
         width: 750px;
@@ -183,13 +165,8 @@ body{
     }
 }
 @media screen and (min-width:1300px){
-    #pluto {
-        width: 275px;
-        left: 59%;
-    }
     #faixa {
         width: 1176.35;
-        left: 2.2px;
 
     }
     #itens{
