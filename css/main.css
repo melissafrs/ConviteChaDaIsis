@@ -30,10 +30,58 @@ body{
     box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.589);
     z-index:-2;
     border-radius: 30px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
 
 }
-
-
+#texto {
+    position: relative;
+    width: 45%;
+}
+#cha {
+    position: relative;
+    width: 70%;
+}
+#cha {
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 950ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+}
+.infos {
+    position: relative;
+    width: 40%;
+    top: 17%;
+    right: 25%;
+}
+#local {
+    top: 8%;
+    left: 25%;
+}
+#local2 {
+    top: -87;
+    left: 27%;
+    z-index: 1;
+    width: 27%;
+}
+#mapa {
+    position: relative;
+    width: 282px; 
+    height: 155px;
+    border:0;
+    z-index: 1;
+    top: -52px;
+    left: 205.6px;
+}
+#local2 {
+    top: -270px;
+    left: 27%;
+    z-index: 1;
+    width: 27%;
+}
 @keyframes bounceIn{
     0%{
       opacity: 0;
@@ -66,35 +114,33 @@ body{
     }
     #texto {
         top: 13%;
+        width: 45%;
     }
-    #nomes{
-        left: 59px;
+    #cha {
+        top: 15%;
+        width: 70%;
     }
-    #p1 {
-        left: 50px;
+    #mapa {
+
+        width: 105.5px; 
+        height: 58px;
+        border:0;
+        z-index: 1;
+        top: 19.5px;
+        left: 77.3px;
     }
-    .endereco {
-        left: 100px;
+    #local2 {
+
+        top: -61;
+        left: 27%;
+        z-index: 1;
+        width: 27%;
     }
-    .grifo {
-        right: 59px;
-    }
-    #iniciais {
-        left: 100px;
-    }
-    #cp {
-        left: 77px;
-    }
-    #ia {
-        right: 77px;
-    }
-    #lista {
-        right: 159.5px;
-    }
+   
 }
 @media screen and (min-width:500px){
     #faixa {
-        width: 588.52;
+        width: 588;
 
     }
     #itens{
@@ -102,71 +148,53 @@ body{
         height: 1500px;
         top: 12%;
     }
-    #texto {
-        top: 13%;
+    #mapa {
+        position: relative;
+        width: 140px; 
+        height: 75px;
+        border:0;
+        z-index: 1;
+        top: 19.5px;
+        left: 103px;
     }
-    #nomes{
-        left: 74.5px;
+    #local2 {
+        top: -87;
+        left: 27%;
+        z-index: 1;
+        width: 27%;
     }
-    #p1 {
-        left: 73px;
-    }
-    .endereco {
-        left: 125px;
-    }
-    .grifo {
-        right: 75px;
-    }
-    #iniciais {
-        left: 125;
-    }
-    #cp {
-        left: 100px;
-    }
-    #ia {
-        right: 100px;
-    }
-    #lista {
-        right: 200px;
-    }
+    
 }
 @media screen and (min-width:768px){
     #faixa {
-        width: 980.29;
+        width: 980;
     }
     #itens{
         width: 750px;
         height: 2500px;
         top: 21%;
     }
-    #nomes{
-        left: 111px;
+    #mapa {
+        position: relative;
+        width: 140px; 
+        height: 75px;
+        border:0;
+        z-index: 1;
+        top: 19.5px;
+        left: 103px;
     }
-    #p1 {
-        left: 110px;
+    #local2 {
+        top: -87;
+        left: 27%;
+        z-index: 1;
+        width: 27%;
     }
-    .endereco {
-        left: 188px;
-    }
-    .grifo {
-        right: 112.5;
-    }
-    #iniciais {
-        left: 187.5;
-    }
-    #cp {
-        left: 147px;
-    }
-    #ia {
-        right: 147px;
-    }
-    #lista {
-        right: 300px;
-    }
+   
 }
-@media screen and (min-width:1300px){
+
+@media screen and (min-width:960px){
     #faixa {
-        width: 1176.35;
+        width: 1176;
 
     }
     #itens{
@@ -175,30 +203,30 @@ body{
         top: 26%;
      }
      #texto {
-         top: 13%;
-     }
-    #nomes{
-        left: 135px;
+        top: 15%;
+        width: 45%;
     }
-    #p1 {
-        left: 133px;
+    #cha {
+        top: 17%;
+        width: 70%;
     }
-    .endereco {
-        left: 236.5px;
+    #local {
+        top: 6%;
     }
-    .grifo {
-        right: 135;
+    #mapa {
+        position: relative;
+        width: 282px; 
+        height: 155px;
+        border:0;
+        z-index: 1;
+        top: -52px;
+        left: 205.6px;
     }
-    #iniciais {
-        left: 225;
+    #local2 {
+        top: -270px;
+        left: 27%;
+        z-index: 1;
+        width: 27%;
     }
-    #cp {
-        left: 177px;
-    }
-    #ia {
-        right: 177px;
-    }
-    #lista {
-        right: 360px;
-    }
+
 }
