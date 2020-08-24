@@ -59,6 +59,8 @@ body{
 }
 #gif {
     width: 50%;
+    position: relative;
+    top: 16%;
 }
 #local {
     top: 8%;
