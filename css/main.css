@@ -57,6 +57,9 @@ body{
     top: 17%;
     right: 25%;
 }
+#gif {
+    width: 50%;
+}
 #local {
     top: 8%;
     left: 25%;
