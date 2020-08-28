@@ -1,20 +1,39 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <link rel="stylesheet" type="text/css" href="./css/normalize.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+        
+
         <title>Chá da Isis</title>
     </head>
     <body>
         <img id="faixa" src="./img/Laco.png">
         <div id="itens">
-            <img id="texto" src="./img/venha.png">
+
             <img id="cha" src="./img/CháDaIsis.png" alt="Chá da Isis">
             <img id="gif" src="./img/gifizim.gif" alt="drive in">
+
             <img class="infos" id="data" src="./img/BoxData.png" alt="Data do Evento">
             <img class="infos" id="local" src="./img/Onde.png" alt="Local do Evento">
-            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d59058.9656811967!2d-49.07616008587972!3d-22.308828684179314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d-22.300869499999997!2d-48.9994211!4m5!1s0x94bf662d8a8c64d3%3A0x64d2d253e27aa10a!2sR.%20Ant%C3%B4nio%20Palhares%20Ortega%2C%20293%20-%20Parque%20Uniao%2C%20Bauru%20-%20SP%2C%2017063-170!3m2!1d-22.3068678!2d-49.085365599999996!5e0!3m2!1spt-BR!2sbr!4v1598146521256!5m2!1spt-BR!2sbr" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class="infos" id="mapa" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d59058.9656811967!2d-49.07616008587972!3d-22.308828684179314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d-22.300869499999997!2d-48.9994211!4m5!1s0x94bf662d8a8c64d3%3A0x64d2d253e27aa10a!2sR.%20Ant%C3%B4nio%20Palhares%20Ortega%2C%20293%20-%20Parque%20Uniao%2C%20Bauru%20-%20SP%2C%2017063-170!3m2!1d-22.3068678!2d-49.085365599999996!5e0!3m2!1spt-BR!2sbr!4v1598146521256!5m2!1spt-BR!2sbr" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            <a href="https://www.google.com.br/maps/place/R.+Ant%C3%B4nio+Palhares+Ortega,+293+-+Parque+Uniao,+Bauru+-+SP,+17063-170/@-22.3068628,-49.0875543,17z/data=!4m5!3m4!1s0x94bf662d8a8c64d3:0x64d2d253e27aa10a!8m2!3d-22.3068678!4d-49.0853656" target="Mapa"
+            onmouseover="window.status='Ir para o google maps';  return true;"
+            onmouseout="window.status='';  return true;">
             <img class="infos" id="local2" src="./img/Onde2.png" alt="Local do Evento">
+            </a>
+            <img id="rsvp" src="./img/rsvp.png">
+            
+            <a href="https://api.whatsapp.com/send?phone=5514982161541&text=Ol%C3%A1.%20Pode%20contar%20com%20a%20minha%20presen%C3%A7a%20no%20Ch%C3%A1%20da%20Isis!" target="Presenca"
+            onmouseover="window.status='Confirmar';  return true;"
+            onmouseout="window.status='';  return true;">
+            <img class="rsvp" id="cp" src="./img/ConfirmarPresença_.png">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5514982161541&text=Infelizmente%20n%C3%A3o%20poderei%20comparecer%20no%20Ch%C3%A1%20da%20Isis" target="Ausencia"
+            onmouseover="window.status='Informar';  return true;"
+            onmouseout="window.status='';  return true;">
+            <img class="rsvp" id="ia" src="./img/InformarAusência.png">
+            </a>
+            
             
         </div>
         

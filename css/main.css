@@ -15,10 +15,9 @@ body{
 
     position: relative;
     top: 10px;
-    z-index:-1;
+    z-index:1;
 
 }
-
 #itens {
     display: flex;
     background-color: #f6f6f6;
@@ -28,7 +27,7 @@ body{
     bottom: 10px;
     position: absolute;
     box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.589);
-    z-index:-2;
+    
     border-radius: 30px;
     margin: 0;
     padding: 0;
@@ -58,6 +57,14 @@ body{
     top: 17%;
     right: 25%;
 }
+.infos {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.infos :hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
 #gif {
     width: 50%;
     position: relative;
@@ -78,16 +85,34 @@ body{
     width: 282px; 
     height: 155px;
     border:0;
-    z-index: 1;
+    
     top: -52px;
     left: 205.6px;
 }
 #local2 {
     top: -270px;
     left: 27%;
-    z-index: 1;
+    z-index: -1;
     width: 27%;
 }
+#rsvp {
+    position: relative;
+    width: 80%;
+   
+}
+.rsvp {
+    position: relative;
+    width: 37%;
+    top: -76px;;
+    left: 15px;
+   
+}
+#ia {
+    top: -135px;
+    left: 125px;
+
+}
+
 @keyframes bounceIn{
     0%{
       opacity: 0;
@@ -136,24 +161,24 @@ body{
         left: 77.3px;
     }
     #local2 {
-
-        top: -61;
-        left: 27%;
+        top: -62;
+        left: 63.5%;
         z-index: 1;
         width: 27%;
     }
    
 }
-@media screen and (min-width:500px){
-    #faixa {
-        width: 588;
+@media screen and (min-width:595px){
 
-    }
     #itens{
         width: 450px;
         height: 1500px;
         top: 12%;
     }
+    #faixa {
+        width: 588;
+
+    }
     #mapa {
         position: relative;
         width: 140px; 
@@ -164,39 +189,26 @@ body{
         left: 103px;
     }
     #local2 {
-        top: -87;
-        left: 27%;
+        top: -90;
+        left: 67%;
         z-index: 1;
-        width: 27%;
+        width: 34%;
+    }
+    .rsvp {
+        position: relative;
+        width: 50%;
+        top: -102px;;
+        left: -20px;
+       
+    }
+    #ia {
+        top: -180px;
+        left: 129px;
+    
     }
     
 }
-@media screen and (min-width:768px){
-    #faixa {
-        width: 980;
-    }
-    #itens{
-        width: 750px;
-        height: 2500px;
-        top: 21%;
-    }
-    #mapa {
-        position: relative;
-        width: 140px; 
-        height: 75px;
-        border:0;
-        z-index: 1;
-        top: 19.5px;
-        left: 103px;
-    }
-    #local2 {
-        top: -87;
-        left: 27%;
-        z-index: 1;
-        width: 27%;
-    }
-   
-}
+
 
 @media screen and (min-width:960px){
     #faixa {
@@ -229,10 +241,24 @@ body{
         left: 205.6px;
     }
     #local2 {
-        top: -270px;
-        left: 27%;
+        top: -275;
+        left: 83%;
         z-index: 1;
-        width: 27%;
+        width: 70%;
     }
-
+    #gif {
+        top: 16.5%;
+    }
+    .rsvp {
+        position: relative;
+        width: 99%;
+        top: -205px;;
+        left: -160px;
+       
+    }
+    #ia {
+        top: -355px;
+        left: 155px;
+    
+    }
 }
