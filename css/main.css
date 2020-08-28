@@ -133,7 +133,9 @@ body{
   }
 
 @media screen and (min-width:10px){
-
+    body {
+        left: 100px;
+    }
     #faixa {
         width: 443.8;
         
@@ -168,7 +170,7 @@ body{
     }
    
 }
-@media screen and (min-width:595px){
+@media screen and (min-width:500px){
 
     #itens{
         width: 450px;
@@ -208,8 +210,6 @@ body{
     }
     
 }
-
-
 @media screen and (min-width:960px){
     #faixa {
         width: 1176;
