@@ -16,7 +16,7 @@ body{
 #faixa {
 
     position: relative;
-    top: 10px;
+    top: 0px;
     z-index:1;
 
 }
@@ -37,14 +37,10 @@ body{
     align-items: center;
 
 }
-#texto {
-    display: none;
-    position: relative;
-    width: 45%;
-}
 #cha {
     position: relative;
     width: 70%;
+    top: 10%;
 }
 #cha {
     opacity: 0;
@@ -53,61 +49,45 @@ body{
     animation-timing-function: linear;
     animation-fill-mode: forwards; 
 }
-.infos {
-    position: relative;
-    width: 40%;
-    top: 17%;
-    right: 25%;
-}
 
 #gif {
     width: 50%;
     position: relative;
-    top: 16%;
+    top: 11%;
+}
+.infos {
+    position: relative;
+    width: 40%;
+    top: 13%;
+    right: 21%;
+}
+.infos {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.infos:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 #local {
-    top: 8%;
-    left: 25%;
-}
-#local2 {
-    top: -87;
-    left: 27%;
-    z-index: 1;
-    width: 27%;
-}
-#mapa {
     position: relative;
-    width: 282px; 
-    height: 155px;
-    border:0;
-    
-    top: -52px;
-    left: 205.6px;
-}
-#local2 {
-    top: -270px;
-    left: 27%;
-    z-index: -1;
-    width: 27%;
+    top: 75%;
+    right: 0%;
+    left: 55%;
 }
 
-#fraldas {
-    width: 50%;
-    position: relative;
-    top: -2%;
-    animation: bounce 2s infinite;
-}
+
 #rsvp {
     position: relative;
     width: 80%;
-   
+    top: 7%;
 }
 
 .rsvp {
     position: relative;
-    width: 37%;
-    top: -76px;;
-    left: 20px;
+    width: 32%;
+    top: 35%;
+    left: 30px;
    
 }
 .rsvp {
@@ -116,17 +96,30 @@ body{
 }
 .rsvp:hover{
     -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 #ia {
-    top: -130px;
-    left: 120px;
+    left: 121px;
+    top: -70%;
+}
 
+#fraldas {
+    width: 50%;
+    position: relative;
+    top: 5%;
+    animation: bounce 2s infinite;
 }
 #spotify {
     position: relative;
     top: -5%;
 }
+#bottomImg {
+    width: 60%;
+    position: relative;
+    bottom: -6.5%;
+}
+
+
 @keyframes bounce{
     0%{
       opacity: 1;
@@ -161,131 +154,153 @@ body{
     }
 }
 
-@media screen and (min-width:10px){
+@media screen and (min-width:41px){
 
     #faixa {
-        width: 90%;
+        width: 325px;   
+    }
+    #itens{
+        width: 250px;
+        height: 880px;
+        top: 7.5%;
         
     }
-    #itens{
-        width: 69%;
-        height: 1200px;
-        top: 10%;
-    }
-    #texto {
-        top: 14%;
-        width: 45%;
-    }
     #cha {
-        top: 15%;
+        top: 12%;
         width: 70%;
     }
-    #mapa {
-
-        width: 100px; 
-        height: 56px;
-        border:0;
-        z-index: 1;
-        top: 24px;
-        left: 73.3px;
-    }
-    #local2 {
-        top: -57px;
-        left: 63.5%;
-        z-index: 1;
-        width: 27%;
-    }
-   
-}
-@media screen and (min-width:500px){
-
-    #itens{
-        width: 450px;
-        height: 1500px;
+    #gif{
         top: 12%;
     }
+    #data{
+        top: 14%;
+    }
+    #local {
+        top: 60%;
+    }
+    #rsvp {
+        top: 7%;
+    }
+    .rsvp {
+        width: 27%;
+        left: 18%;
+        top: 10%;
+    }
+    #ia {
+        top: -100%;
+        left: 120px;
+    }
+    #fraldas {
+        width: 65%;
+        top: 2%;
+    }
+   #spotify{
+       display: none;
+   }
+   #mapa {
+       display: none;
+   }
+   #bottomImg {
+        bottom: -5%;
+   }
+}
+
+@media screen and (min-width:500px){
     #faixa {
         width: 588;
 
     }
-    #mapa {
-        position: relative;
-        width: 140px; 
-        height: 75px;
-        border:0;
-        z-index: 1;
-        top: 19.5px;
-        left: 103px;
+    #itens{
+        width: 450px;
+        height: 1600px;
+        top: 20%;
     }
-    #local2 {
-        top: -90;
-        left: 67%;
-        z-index: 1;
-        width: 34%;
+    #cha {
+        top: 13%;
+        width: 70%;
+    }
+    #gif {
+        top: 14%;
+    }
+    #data{
+        top: 15.2%;
+    }
+    #local{
+        top: 75%;
+    }
+    #rsvp{
+        top: 9%;
     }
     .rsvp {
         position: relative;
         width: 50%;
-        top: -102px;;
+        top: 50%;
         left: -20px;
-       
     }
     #ia {
-        top: -180px;
+        top: -50%;
         left: 129px;
     
     }
-    
+    #fraldas {
+        top: 1%;
+    }
+    #bottomImg {
+        bottom: -90px;
+   }
 }
 @media screen and (min-width:960px){
     #faixa {
-        width: 1176;
+        width: 1000px;
 
     }
     #itens{
-        width: 900px;
+        width: 765px;
         height: 2500px;
-        top: 24%;
+        top: 33.5%;
      }
-     #texto {
-        top: 15%;
-        width: 45%;
-    }
     #cha {
-        top: 17%;
-        width: 70%;
-    }
-    #local {
-        top: 6%;
-    }
-    #mapa {
-        position: relative;
-        width: 282px; 
-        height: 155px;
-        border:0;
-        z-index: 1;
-        top: -52px;
-        left: 205.6px;
-    }
-    #local2 {
-        top: -275;
-        left: 83%;
-        z-index: 1;
+        top: 13%;
         width: 70%;
     }
     #gif {
-        top: 16.5%;
+        top: 13.5%;
+    }
+    #local {
+        top: 67%;
+        width: 55.5%;
     }
     .rsvp {
         position: relative;
-        width: 99%;
-        top: -205px;;
-        left: -160px;
+        width: 65%;
+        top: 75px;;
+        left: -100px;
        
     }
     #ia {
-        top: -355px;
-        left: 155px;
+        top: -20px;
+        left: 175px;
     
     }
+    #fraldas {
+        top: 6.5%;
+        width: 30%;
+        right: 25%;
+    }
+ 
+    #spotify{
+        position: relative;
+        left: 22%;
+        top: -7%;
+        display: block;
+    }
+    #mapa {
+        position: relative;
+        left: 22%;
+        top: -6.5%;
+        display: block;
+    }
+    #bottomImg {
+        bottom: -9px;
+   }
 }
