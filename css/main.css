@@ -304,3 +304,18 @@ body{
         bottom: -9px;
    }
 }
+@media screen and (min-width:401px) and  (min-height:800px) {
+    #itens{
+        top: 8.5%;
+     }
+}
+@media screen and (min-width:500px) and  (min-height:600px) {
+    #itens{
+        top: 14%;
+     }
+}
+@media screen and (min-width:900px) and  (min-height:940px) {
+    #itens{
+        top: 11%;
+     }
+}
